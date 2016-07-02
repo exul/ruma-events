@@ -1,0 +1,1 @@
+initSidebarItems({"struct":[["RedactionEventContent","The payload of a `RedactionEvent`."],["RedactionEventExtraContent","Extra content for a `RedactionEvent`."]],"type":[["RedactionEvent","A redaction of an event."]]});

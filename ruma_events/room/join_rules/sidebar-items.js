@@ -1,0 +1,1 @@
+initSidebarItems({"enum":[["JoinRule","The rule used for users wishing to join this room."]],"struct":[["JoinRulesEventContent","The payload of a `JoinRulesEvent`."]],"type":[["JoinRulesEvent","Describes how users are allowed to join the room."]]});

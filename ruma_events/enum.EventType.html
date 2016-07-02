@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `EventType` enum in crate `ruma_events`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, EventType">
+
+    <title>ruma_events::EventType - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../rustdoc.css">
+    <link rel="stylesheet" type="text/css" href="../main.css">
+    
+
+    
+    
+</head>
+<body class="rustdoc">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <nav class="sidebar">
+        
+        <p class='location'><a href='index.html'>ruma_events</a></p><script>window.sidebarCurrent = {name: 'EventType', ty: 'enum', relpath: ''};</script><script defer src="sidebar-items.js"></script>
+    </nav>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content enum">
+<h1 class='fqn'><span class='in-band'>Enum <a href='index.html'>ruma_events</a>::<wbr><a class='enum' href=''>EventType</a></span><span class='out-of-band'><span id='render-detail'>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a id='src-6518' class='srclink' href='../src/ruma_events/src/lib.rs.html#26-73' title='goto source code'>[src]</a></span></h1>
+<pre class='rust enum'>pub enum EventType {
+    CallAnswer,
+    CallCandidates,
+    CallHangup,
+    CallInvite,
+    Presence,
+    Receipt,
+    RoomAliases,
+    RoomAvatar,
+    RoomCanonicalAlias,
+    RoomCreate,
+    RoomGuestAccess,
+    RoomHistoryVisibility,
+    RoomJoinRules,
+    RoomMember,
+    RoomMessage,
+    RoomName,
+    RoomPowerLevels,
+    RoomRedaction,
+    RoomThirdPartyInvite,
+    RoomTopic,
+    Tag,
+    Typing,
+    Custom(<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>),
+}</pre><div class='docblock'><p>The type of an event.</p>
+</div><h2 class='variants'>Variants</h2>
+<span id='variant.CallAnswer' class='variant'><code>CallAnswer</code></span><div class='docblock'><p>m.call.answer</p>
+</div><span id='variant.CallCandidates' class='variant'><code>CallCandidates</code></span><div class='docblock'><p>m.call.candidates</p>
+</div><span id='variant.CallHangup' class='variant'><code>CallHangup</code></span><div class='docblock'><p>m.call.hangup</p>
+</div><span id='variant.CallInvite' class='variant'><code>CallInvite</code></span><div class='docblock'><p>m.call.invite</p>
+</div><span id='variant.Presence' class='variant'><code>Presence</code></span><div class='docblock'><p>m.presence</p>
+</div><span id='variant.Receipt' class='variant'><code>Receipt</code></span><div class='docblock'><p>m.receipt</p>
+</div><span id='variant.RoomAliases' class='variant'><code>RoomAliases</code></span><div class='docblock'><p>m.room.aliases</p>
+</div><span id='variant.RoomAvatar' class='variant'><code>RoomAvatar</code></span><div class='docblock'><p>m.room.avatar</p>
+</div><span id='variant.RoomCanonicalAlias' class='variant'><code>RoomCanonicalAlias</code></span><div class='docblock'><p>m.room.canonical_alias</p>
+</div><span id='variant.RoomCreate' class='variant'><code>RoomCreate</code></span><div class='docblock'><p>m.room.create</p>
+</div><span id='variant.RoomGuestAccess' class='variant'><code>RoomGuestAccess</code></span><div class='docblock'><p>m.room.guest_access</p>
+</div><span id='variant.RoomHistoryVisibility' class='variant'><code>RoomHistoryVisibility</code></span><div class='docblock'><p>m.room.history_visibility</p>
+</div><span id='variant.RoomJoinRules' class='variant'><code>RoomJoinRules</code></span><div class='docblock'><p>m.room.join_rules</p>
+</div><span id='variant.RoomMember' class='variant'><code>RoomMember</code></span><div class='docblock'><p>m.room.member</p>
+</div><span id='variant.RoomMessage' class='variant'><code>RoomMessage</code></span><div class='docblock'><p>m.room.message</p>
+</div><span id='variant.RoomName' class='variant'><code>RoomName</code></span><div class='docblock'><p>m.room.name</p>
+</div><span id='variant.RoomPowerLevels' class='variant'><code>RoomPowerLevels</code></span><div class='docblock'><p>m.room.power_levels</p>
+</div><span id='variant.RoomRedaction' class='variant'><code>RoomRedaction</code></span><div class='docblock'><p>m.room.redaction</p>
+</div><span id='variant.RoomThirdPartyInvite' class='variant'><code>RoomThirdPartyInvite</code></span><div class='docblock'><p>m.room.third_party_invite</p>
+</div><span id='variant.RoomTopic' class='variant'><code>RoomTopic</code></span><div class='docblock'><p>m.room.topic</p>
+</div><span id='variant.Tag' class='variant'><code>Tag</code></span><div class='docblock'><p>m.tag</p>
+</div><span id='variant.Typing' class='variant'><code>Typing</code></span><div class='docblock'><p>m.typing</p>
+</div><span id='variant.Custom' class='variant'><code>Custom(<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>)</code></span><div class='docblock'><p>Any event that is not part of the specification.</p>
+</div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/fmt/trait.Display.html' title='core::fmt::Display'>Display</a> for <a class='enum' href='../ruma_events/enum.EventType.html' title='ruma_events::EventType'>EventType</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-7332' class='srclink' href='../src/ruma_events/src/lib.rs.html#152-182' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.fmt' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/fmt/trait.Display.html#tymethod.fmt' class='fnname'>fmt</a>(&amp;self, f: &amp;mut <a class='struct' href='https://doc.rust-lang.org/nightly/core/fmt/struct.Formatter.html' title='core::fmt::Formatter'>Formatter</a>) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.tuple.html'>()</a>,&nbsp;<a class='struct' href='https://doc.rust-lang.org/nightly/core/fmt/struct.Error.html' title='core::fmt::Error'>FmtError</a>&gt;</code></h4>
+<div class='docblock'><p>Formats the value using the given formatter.</p>
+</div></div><h3 id='derived_implementations'>Derived Implementations </h3><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html' title='core::fmt::Debug'>Debug</a> for <a class='enum' href='../ruma_events/enum.EventType.html' title='ruma_events::EventType'>EventType</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-6665' class='srclink' href='../src/ruma_events/src/lib.rs.html#25' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.fmt-1' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html#tymethod.fmt' class='fnname'>fmt</a>(&amp;self, __arg_0: &amp;mut <a class='struct' href='https://doc.rust-lang.org/nightly/core/fmt/struct.Formatter.html' title='core::fmt::Formatter'>Formatter</a>) -&gt; <a class='type' href='https://doc.rust-lang.org/nightly/core/fmt/type.Result.html' title='core::fmt::Result'>Result</a></code></h4>
+<div class='docblock'><p>Formats the value using the given formatter.</p>
+</div></div></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
+                </p>
+            </div>
+        </div>
+    </aside>
+
+    
+
+    <script>
+        window.rootPath = "../";
+        window.currentCrate = "ruma_events";
+        window.playgroundUrl = "";
+    </script>
+    <script src="../jquery.js"></script>
+    <script src="../main.js"></script>
+    
+    <script defer src="../search-index.js"></script>
+</body>
+</html>

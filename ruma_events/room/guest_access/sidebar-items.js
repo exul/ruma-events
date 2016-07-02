@@ -1,0 +1,1 @@
+initSidebarItems({"enum":[["GuestAccess","A policy for guest user access to a room."]],"struct":[["GuestAccessEventContent","The payload of a `GuestAccessEvent`."]],"type":[["GuestAccessEvent","Controls whether guest users are allowed to join rooms."]]});

@@ -1,0 +1,1 @@
+initSidebarItems({"struct":[["AnswerEventContent","The payload of an `AnswerEvent`."]],"type":[["AnswerEvent","This event is sent by the callee when they wish to answer the call."]]});

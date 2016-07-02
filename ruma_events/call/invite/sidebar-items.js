@@ -1,0 +1,1 @@
+initSidebarItems({"struct":[["InviteEventContent","The payload of an `InviteEvent`."]],"type":[["InviteEvent","This event is sent by the caller when they wish to establish a call."]]});

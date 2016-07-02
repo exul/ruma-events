@@ -1,0 +1,1 @@
+initSidebarItems({"enum":[["MembershipState","The membership state of a user."]],"struct":[["MemberEventContent","The payload of a `MemberEvent`."],["MemberEventExtraContent","Extra content for a `MemberEvent`."]],"type":[["MemberEvent","The current membership state of a user in the room."]]});

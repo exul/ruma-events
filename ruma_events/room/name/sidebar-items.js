@@ -1,0 +1,1 @@
+initSidebarItems({"struct":[["NameEventContent","The payload of a `NameEvent`."]],"type":[["NameEvent","A human-friendly room name designed to be displayed to the end-user."]]});

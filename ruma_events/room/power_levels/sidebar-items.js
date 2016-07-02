@@ -1,0 +1,1 @@
+initSidebarItems({"struct":[["PowerLevelsEventContent","The payload of a `PowerLevelsEvent`."]],"type":[["PowerLevelsEvent","Defines the power levels (privileges) of users in the room."]]});

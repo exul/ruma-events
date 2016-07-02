@@ -1,0 +1,1 @@
+initSidebarItems({"struct":[["TypingEventContent","The payload of a `TypingEvent`."],["TypingEventExtraContent","Extra content for a `TypingEvent`."]],"type":[["TypingEvent","Informs the client of the list of users currently typing."]]});

@@ -1,0 +1,1 @@
+initSidebarItems({"struct":[["Receipt","An acknowledgement of an event."],["ReceiptEventExtraContent","Extra content for a `PresenceEvent`."],["Receipts","A collection of receipts."]],"type":[["ReceiptEvent","Informs the client of new receipts."],["ReceiptEventContent","The payload of a `ReceiptEvent`."],["UserReceipts","A mapping of user ID to receipt."]]});

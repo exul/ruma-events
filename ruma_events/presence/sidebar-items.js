@@ -1,0 +1,1 @@
+initSidebarItems({"enum":[["PresenceState","A description of a user's connectivity and availability for chat."]],"struct":[["PresenceEventContent","The payload of a `PresenceEvent`."],["PresenceEventExtraContent","Extra content for a `PresenceEvent`."]],"type":[["PresenceEvent","Informs the client of a user's presence state change."]]});

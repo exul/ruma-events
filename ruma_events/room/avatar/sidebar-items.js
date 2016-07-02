@@ -1,0 +1,1 @@
+initSidebarItems({"struct":[["AvatarEventContent","The payload of an `AvatarEvent`."]],"type":[["AvatarEvent","A picture that is associated with the room."]]});

@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `room` mod in crate `ruma_events`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, room">
+
+    <title>ruma_events::room - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../../rustdoc.css">
+    <link rel="stylesheet" type="text/css" href="../../main.css">
+    
+
+    
+    
+</head>
+<body class="rustdoc">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <nav class="sidebar">
+        
+        <p class='location'><a href='../index.html'>ruma_events</a></p><script>window.sidebarCurrent = {name: 'room', ty: 'mod', relpath: '../'};</script><script defer src="../sidebar-items.js"></script>
+    </nav>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content mod">
+<h1 class='fqn'><span class='in-band'>Module <a href='../index.html'>ruma_events</a>::<wbr><a class='mod' href=''>room</a></span><span class='out-of-band'><span id='render-detail'>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a id='src-1559' class='srclink' href='../../src/ruma_events/src/room/mod.rs.html#1-31' title='goto source code'>[src]</a></span></h1>
+<div class='docblock'><p>Modules for events in the <em>m.room</em> namespace.</p>
+
+<p>This module also contains types shared by events in its child namespaces.</p>
+</div><h2 id='modules' class='section-header'><a href="#modules">Modules</a></h2>
+<table>
+                       <tr class=' module-item'>
+                           <td><a class='mod' href='aliases/index.html'
+                                  title='ruma_events::room::aliases'>aliases</a></td>
+                           <td class='docblock short'>
+                                <p>Types for the <em>m.room.aliases</em> event.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='mod' href='avatar/index.html'
+                                  title='ruma_events::room::avatar'>avatar</a></td>
+                           <td class='docblock short'>
+                                <p>Types for the <em>m.room.avatar</em> event.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='mod' href='canonical_alias/index.html'
+                                  title='ruma_events::room::canonical_alias'>canonical_alias</a></td>
+                           <td class='docblock short'>
+                                <p>Types for the <em>m.room.canonical_alias</em> event.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='mod' href='create/index.html'
+                                  title='ruma_events::room::create'>create</a></td>
+                           <td class='docblock short'>
+                                <p>Types for the <em>m.room.create</em> event.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='mod' href='guest_access/index.html'
+                                  title='ruma_events::room::guest_access'>guest_access</a></td>
+                           <td class='docblock short'>
+                                <p>Types for the <em>m.room.guest_access</em> event.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='mod' href='history_visibility/index.html'
+                                  title='ruma_events::room::history_visibility'>history_visibility</a></td>
+                           <td class='docblock short'>
+                                <p>Types for the <em>m.room.history_visibility</em> event.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='mod' href='join_rules/index.html'
+                                  title='ruma_events::room::join_rules'>join_rules</a></td>
+                           <td class='docblock short'>
+                                <p>Types for the <em>m.room.join_rules</em> event.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='mod' href='member/index.html'
+                                  title='ruma_events::room::member'>member</a></td>
+                           <td class='docblock short'>
+                                <p>Types for the <em>m.room.member</em> event.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='mod' href='message/index.html'
+                                  title='ruma_events::room::message'>message</a></td>
+                           <td class='docblock short'>
+                                <p>Types for the <em>m.room.message</em> event.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='mod' href='name/index.html'
+                                  title='ruma_events::room::name'>name</a></td>
+                           <td class='docblock short'>
+                                <p>Types for the <em>m.room.name</em> event.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='mod' href='power_levels/index.html'
+                                  title='ruma_events::room::power_levels'>power_levels</a></td>
+                           <td class='docblock short'>
+                                <p>Types for the <em>m.room.power_levels</em> event.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='mod' href='redaction/index.html'
+                                  title='ruma_events::room::redaction'>redaction</a></td>
+                           <td class='docblock short'>
+                                <p>Types for the <em>m.room.redaction</em> event.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='mod' href='third_party_invite/index.html'
+                                  title='ruma_events::room::third_party_invite'>third_party_invite</a></td>
+                           <td class='docblock short'>
+                                <p>Types for the <em>m.room.third_party_invite</em> event.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='mod' href='topic/index.html'
+                                  title='ruma_events::room::topic'>topic</a></td>
+                           <td class='docblock short'>
+                                <p>Types for the <em>m.room.topic</em> event.</p>
+                           </td>
+                       </tr></table><h2 id='structs' class='section-header'><a href="#structs">Structs</a></h2>
+<table>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ImageInfo.html'
+                                  title='ruma_events::room::ImageInfo'>ImageInfo</a></td>
+                           <td class='docblock short'>
+                                <p>Metadata about an image.</p>
+                           </td>
+                       </tr></table></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
+                </p>
+            </div>
+        </div>
+    </aside>
+
+    
+
+    <script>
+        window.rootPath = "../../";
+        window.currentCrate = "ruma_events";
+        window.playgroundUrl = "";
+    </script>
+    <script src="../../jquery.js"></script>
+    <script src="../../main.js"></script>
+    
+    <script defer src="../../search-index.js"></script>
+</body>
+</html>

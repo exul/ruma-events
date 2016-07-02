@@ -1,0 +1,1 @@
+initSidebarItems({"struct":[["CanonicalAliasEventContent","The payload of a `CanonicalAliasEvent`."]],"type":[["CanonicalAliasEvent","Informs the room as to which alias is the canonical one."]]});

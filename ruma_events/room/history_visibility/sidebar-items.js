@@ -1,0 +1,1 @@
+initSidebarItems({"enum":[["HistoryVisibility","Who can see a room's history."]],"struct":[["HistoryVisibilityEventContent","The payload of a `HistoryVisibilityEvent`."]],"type":[["HistoryVisibilityEvent","This event controls whether a member of a room can see the events that happened in a room from before they joined."]]});

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `MemberEvent` type in crate `ruma_events`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, MemberEvent">
+
+    <title>ruma_events::room::member::MemberEvent - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../../../rustdoc.css">
+    <link rel="stylesheet" type="text/css" href="../../../main.css">
+    
+
+    
+    
+</head>
+<body class="rustdoc">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <nav class="sidebar">
+        
+        <p class='location'><a href='../../index.html'>ruma_events</a>::<wbr><a href='../index.html'>room</a>::<wbr><a href='index.html'>member</a></p><script>window.sidebarCurrent = {name: 'MemberEvent', ty: 'type', relpath: ''};</script><script defer src="sidebar-items.js"></script>
+    </nav>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content type">
+<h1 class='fqn'><span class='in-band'><a href='../../index.html'>ruma_events</a>::<wbr><a href='../index.html'>room</a>::<wbr><a href='index.html'>member</a>::<wbr><a class='type' href=''>MemberEvent</a></span><span class='out-of-band'><span id='render-detail'>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a id='src-2571' class='srclink' href='../../../src/ruma_events/src/room/member.rs.html#19' title='goto source code'>[src]</a></span></h1>
+<pre class='rust typedef'>type MemberEvent = <a class='struct' href='../../../ruma_events/struct.StateEvent.html' title='ruma_events::StateEvent'>StateEvent</a>&lt;<a class='struct' href='../../../ruma_events/room/member/struct.MemberEventContent.html' title='ruma_events::room::member::MemberEventContent'>MemberEventContent</a>,&nbsp;<a class='struct' href='../../../ruma_events/room/member/struct.MemberEventExtraContent.html' title='ruma_events::room::member::MemberEventExtraContent'>MemberEventExtraContent</a>&gt;;</pre><div class='docblock'><p>The current membership state of a user in the room.</p>
+
+<p>Adjusts the membership state for a user in a room. It is preferable to use the membership APIs
+(<code>/rooms/&lt;room id&gt;/invite</code> etc) when performing membership actions rather than adjusting the
+state directly as there are a restricted set of valid transformations. For example, user A
+cannot force user B to join a room, and trying to force this state change directly will fail.</p>
+
+<p>The <em>third_party_invite</em> property will be set if this invite is an <em>invite</em> event and is the
+successor of an <em>m.room.third_party_invite</em> event, and absent otherwise.</p>
+
+<p>This event may also include an <em>invite_room_state</em> key outside the <em>content</em> key. If present,
+this contains an array of <code>StrippedState</code> events. These events provide information on a few
+select state events such as the room name.</p>
+</div></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
+                </p>
+            </div>
+        </div>
+    </aside>
+
+    
+
+    <script>
+        window.rootPath = "../../../";
+        window.currentCrate = "ruma_events";
+        window.playgroundUrl = "";
+    </script>
+    <script src="../../../jquery.js"></script>
+    <script src="../../../main.js"></script>
+    
+    <script defer src="../../../search-index.js"></script>
+</body>
+</html>

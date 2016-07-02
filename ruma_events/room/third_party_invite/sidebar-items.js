@@ -1,0 +1,1 @@
+initSidebarItems({"struct":[["PublicKey","A public key for signing a third party invite token."],["ThirdPartyInviteEventContent","The payload of a `ThirdPartyInviteEvent`."]],"type":[["ThirdPartyInviteEvent","An invitation to a room issued to a third party identifier, rather than a matrix user ID."]]});
